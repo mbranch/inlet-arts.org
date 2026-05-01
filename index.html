@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inlet Arts / Access. Dance. Education.</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="nav-brand">
+        <div class="nav-logo">Inlet Arts</div>
+        <div class="nav-sub">Access · Dance · Education</div>
+      </div>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#programs">Programs</a>
+        <a href="#about">About</a>
+        <a href="#press">Press</a>
+        <!-- <a href="#contact">Contact</a> -->
+      </div>
+      <button class="nav-toggle" id="navToggle">&#9776;</button>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home" onclick="closeMobile()">Home</a>
+      <a href="#programs" onclick="closeMobile()">Programs</a>
+      <a href="#about" onclick="closeMobile()">About</a>
+      <a href="#press" onclick="closeMobile()">Press</a>
+      <!-- <a href="#contact" onclick="closeMobile()">Contact</a> -->
+    </div>
+
+    <!-- HOME -->
+    <section id="home">
+      <div class="hero">
+        <div class="hero-img-wrap">
+          <img
+            src="images/hero.jpg"
+            alt="Aerial view of the Salish Sea and Pacific Northwest inlets"
+            class="hero-img"
+            onerror="this.parentElement.classList.add('hero-fallback')"
+          />
+          <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+          <p class="eyebrow">
+            Seattle's Eastside · East King County, Washington
+          </p>
+          <h1>Dance belongs<br />to everyone.</h1>
+          <p class="mission">
+            "Just as inlets connect deep land to open sea, we bring dance into
+            communities that have been out of reach — as a vehicle for human
+            connection, community building, and embodied education."
+          </p>
+          <div class="hero-btns">
+            <a href="#programs" class="btn-primary">Our programs</a>
+            <a href="#about" class="btn-secondary">About us</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="home-intro">
+        <p class="intro-lead">
+          Making contemporary dance accessible to residents and visitors to
+          Seattle's Eastside.
+        </p>
+        <div class="stat-row">
+          <div class="stat">
+            <span class="stat-n">410+</span
+            ><span class="stat-l">artists presented</span>
+          </div>
+          <div class="stat">
+            <span class="stat-n">76</span
+            ><span class="stat-l">dance companies</span>
+          </div>
+          <div class="stat">
+            <span class="stat-n">1,000+</span
+            ><span class="stat-l">EDP participants</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="program-previews">
+        <div class="preview-card">
+          <div class="preview-img-wrap">
+            <img
+              src="images/chopshop.jpg"
+              alt="CHOP SHOP festival performance"
+              onerror="this.parentElement.classList.add('img-fallback')"
+            />
+            <span class="preview-tag">Festival</span>
+          </div>
+          <h3>CHOP SHOP: Bodies of Work</h3>
+          <p>
+            The only professional contemporary dance festival on Seattle's
+            Eastside, returning in 2027.
+          </p>
+          <a href="#programs" class="text-link">Learn more &rarr;</a>
+        </div>
+        <div class="preview-card">
+          <div class="preview-img-wrap">
+            <img
+              src="images/rise.jpg"
+              alt="RISE dance intensive"
+              onerror="this.parentElement.classList.add('img-fallback')"
+            />
+            <span class="preview-tag">Intensive</span>
+          </div>
+          <h3>RISE</h3>
+          <p>
+            An intimate two-week dance intensive retreat in the beauty of the
+            Pacific Northwest.
+          </p>
+          <a href="#programs" class="text-link">Learn more &rarr;</a>
+        </div>
+        <div class="preview-card">
+          <div class="preview-img-wrap">
+            <img
+              src="images/edp.jpg"
+              alt="Experience Dance Program"
+              onerror="this.parentElement.classList.add('img-fallback')"
+            />
+            <span class="preview-tag">Community</span>
+          </div>
+          <h3>Experience Dance Program</h3>
+          <p>
+            Free lecture-demonstrations, movement classes, and open studio
+            sessions across the Eastside.
+          </p>
+          <a href="#programs" class="text-link">Learn more &rarr;</a>
+        </div>
+        <div class="preview-card">
+          <div class="preview-img-wrap">
+            <img
+              src="images/schools.jpg"
+              alt="Public school dance programming"
+              onerror="this.parentElement.classList.add('img-fallback')"
+            />
+            <span class="preview-tag">Youth</span>
+          </div>
+          <h3>Public School Programming</h3>
+          <p>
+            After-school creative movement for elementary students, taught by
+            professional dance artists.
+          </p>
+          <a href="#programs" class="text-link">Learn more &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAMS -->
+    <section id="programs">
+      <div class="section-wrap">
+        <div class="section-header">
+          <h2>Programs</h2>
+          <p>
+            Four interconnected initiatives, one mission: making contemporary
+            dance accessible to everyone in East King County.
+          </p>
+        </div>
+
+        <div class="program-block">
+          <div class="program-img-wrap">
+            <img
+              src="images/chopshop.jpg"
+              alt="CHOP SHOP performance"
+              onerror="this.parentElement.classList.add('img-fallback')"
+            />
+          </div>
+          <div class="program-text">
+            <span class="tag">Festival · February 2027</span>
+            <h3>
+              <a
+                href="https://www.chopshopdance.org"
+                target="_blank"
+                rel="noopener"
+                >CHOP SHOP: Bodies of Work ↗</a
+              >
+            </h3>
+            <p>
+              CHOP SHOP: Bodies of Work is a weekend-long annual contemporary
+              dance festival returning to Seattle's Eastside in February 2027.
+              The festival presents 2–3 performances by regional, national, and
+              international choreographers, alongside 6–8 master classes,
+              post-performance Q&As, and artist receptions.
+            </p>
+            <p>
+              Since its founding in 2008, CHOP SHOP has presented 410+ artists
+              from 76 dance companies, hosted more than 70 master classes, and
+              welcomed over 1,000 Experience Dance Program participants.
+              Applications open Summer 2026.
+            </p>
+          </div>
+        </div>
+
+        <div class="program-block reverse">
+          <div class="program-img-wrap">
+            <img
+              src="images/rise.jpg"
+              alt="RISE dance intensive"
+              onerror="this.parentElement.classList.add('img-fallback')"
+            />
+          </div>
+          <div class="program-text">
+            <span class="tag">Intensive · Summer 2027</span>
+            <h3>RISE</h3>
+            <p>
+              An intimate two-week dance intensive retreat, situated in the
+              beauty of the Pacific Northwest, pairing 30 emerging dancers with
+              rising choreographers and educators from both Seattle and the
+              national field.
+            </p>
+            <p>
+              The program creates the conditions for deep creative work,
+              mentorship, and professional development that the pressures of
+              daily artistic life rarely allow. The culminating performance is
+              open to the public, with invited industry personnel.
+            </p>
+          </div>
+        </div>
+
+        <div class="program-block">
+          <div class="program-img-wrap">
+            <img
+              src="images/edp.jpg"
+              alt="Experience Dance Program"
+              onerror="this.parentElement.classList.add('img-fallback')"
+            />
+          </div>
+          <div class="program-text">
+            <span class="tag">Community · Year-round</span>
+            <h3>Experience Dance Program</h3>
+            <p>
+              The Experience Dance Program (EDP) offers free community events
+              threading through all of Inlet Arts' work, in partnership with
+              community groups across the Eastside. It comprises three
+              components:
+            </p>
+            <ul>
+              <li>
+                <strong>Reading Dance</strong> — an hour-long
+                lecture-demonstration on the creative process behind
+                contemporary dance
+              </li>
+              <li>
+                <strong>Introduction to Contemporary Dance</strong> — free
+                movement classes open to all
+              </li>
+              <li>
+                <strong>Open Studio Sessions</strong> — behind-the-scenes access
+                to professional rehearsals
+              </li>
+            </ul>
+            <p>
+              Past venues include South Bellevue Community Center, Bellevue Art
+              Museum, Crossroads Community Center, and Eastside libraries.
+            </p>
+          </div>
+        </div>
+
+        <div class="program-block reverse">
+          <div class="program-img-wrap">
+            <img
+              src="images/schools.jpg"
+              alt="Public school programming"
+              onerror="this.parentElement.classList.add('img-fallback')"
+            />
+          </div>
+          <div class="program-text">
+            <span class="tag">Youth · Fall 2026</span>
+            <h3>Public School Programming</h3>
+            <p>
+              In partnership with local PTAs, Inlet Arts offers after-school
+              creative movement sessions at the elementary level, taught by
+              professional dance artists. Each six-week session culminates in an
+              open showing for families.
+            </p>
+            <p>
+              Scholarships are available to ensure participation is not limited
+              by financial means. East Ridge Elementary in Woodinville is our
+              pilot partner school, launching Fall 2026, with expansion to
+              additional Eastside schools planned for 2027 and beyond.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="section-wrap">
+        <div class="section-header">
+          <h2>About</h2>
+          <p>
+            Inlet Arts / Access. Dance. Education. was founded by Emily Schoen
+            Branch, Eva Stone, and Cameo Lethem — three lifelong dance
+            professionals committed to strengthening the local dance field
+            across all ages on Seattle's Eastside.
+          </p>
+        </div>
+
+        <div class="team-grid">
+          <div class="team-card">
+            <div class="team-img-wrap">
+              <!--
+              <img
+                src="images/emily.jpg"
+                alt="Emily Schoen Branch"
+                onerror="this.parentElement.classList.add('img-fallback')"
+              />
+              -->
+              <div class="team-text">
+                <h4>
+                  <a href="https://esb.dance" target="_blank" rel="noopener"
+                    >Emily Schoen Branch ↗</a
+                  >
+                </h4>
+                <p class="team-role">
+                  Director · Choreographer, Teacher, Activator of dance in
+                  society · Dance Magazine "Top 25 to Watch"
+                </p>
+              </div>
+            </div>
+            <div class="team-text">
+              <p>
+                Emily Schoen Branch is a choreographer, performer, and teacher
+                based in the Pacific Northwest. Since 2011 she has led ESB Dance
+                Projects, producing work across unconventional and international
+                contexts, including a two-year collaboration with Tunisian
+                dancers supported by Baryshnikov Arts Center and the US Embassy
+                in Tunisia. She holds an MFA from the University of Washington
+                and is a Princess Grace Fellowship nominee. Her research has
+                been published by the American Journal of Arts Management.
+              </p>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-img-wrap">
+              <div class="team-text">
+                <h4>Eva Stone</h4>
+                <p class="team-role">
+                  Founder & Co-producer, CHOP SHOP · Choreographer and Teaching
+                  Artist
+                </p>
+              </div>
+              <!--
+              <img
+                src="images/eva.jpg"
+                alt="Eva Stone"
+                onerror="this.parentElement.classList.add('img-fallback')"
+              />
+              -->
+            </div>
+            <div class="team-text">
+              <p>
+                Eva Stone is a choreographer, producer, and teaching artist with
+                over thirty years in the field. She founded CHOP SHOP: Bodies of
+                Work in 2008 and led the festival for fourteen years. On faculty
+                at Pacific Northwest Ballet School, she created New Voices, a
+                nationally recognized choreography program for young women, and
+                serves as Program Coordinator for Next Step. Her work has been
+                commissioned by On the Boards, Pacific Northwest Ballet, and
+                Seattle Art Museum, with premieres in New York, London, Geneva,
+                Montreal, and St. Petersburg.
+              </p>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-img-wrap">
+              <div class="team-text">
+                <h4>Cameo Lethem</h4>
+                <p class="team-role">
+                  Co-director, RISE · Choreographer, Curator, and Educator
+                </p>
+              </div>
+              <!--
+              <img
+                src="images/cameo.jpg"
+                alt="Cameo Lethem"
+                onerror="this.parentElement.classList.add('img-fallback')"
+              />
+              -->
+            </div>
+            <div class="team-text">
+              <p>
+                Cameo Lethem is a Seattle-based choreographer, curator, and arts
+                administrator. She has served as panelist and curator for
+                Velocity Dance Center and Base: Experimental Arts + Space, and
+                held administrative roles at Whim W'Him, Spectrum Dance Theater,
+                and American Dance Institute. She teaches at Cornish College of
+                the Arts, Seattle University, and the University of Washington.
+                Her work has earned funding from the City of Seattle and
+                SeattleDances' Dance Crush Award. She is a current member of
+                Velocity Dance Center's Artist Circle '26–'27.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRESS -->
+    <section id="press">
+      <div class="section-wrap">
+        <div class="section-header">
+          <h2>Press &amp; Testimonials</h2>
+          <p>
+            What artists, audiences, and critics have said about CHOP SHOP and
+            Inlet Arts.
+          </p>
+        </div>
+
+        <div class="quotes-grid">
+          <blockquote>
+            <p>
+              "My Chop Shop experience is one of such admiration, appreciation,
+              and joy... Chop Shop feels like a dance home for me — somewhere
+              with people I will always want to return to, and a supportive
+              catalyst for new ideas and opportunities. The work that Eva and
+              her team are doing is crucial and wonderful and necessary to the
+              contemporary dance community."
+            </p>
+            <cite>— Courtney Mazeika, dance artist</cite>
+          </blockquote>
+
+          <blockquote>
+            <p>
+              "Working with Emily Schoen Branch over the course of several years
+              has been integral to my growth as an artist in and out of the
+              studio... what I've always admired most about Emily is her
+              dedication to exercising fair, organized, and sustainable working
+              conditions for dancers in an industry where it is largely
+              lacking."
+            </p>
+            <cite>— Kacie Boblitt, dance artist</cite>
+          </blockquote>
+
+          <blockquote>
+            <p>
+              "Going into CHOP SHOP: Bodies of Work, I wasn't sure what to
+              expect... I was pleasantly surprised to witness an event curated
+              for people like me, with the purpose of presenting accessible,
+              creative work from artists that want to share their stories."
+            </p>
+            <cite>— Huma Ali, Teen Editor, TeenTix Newsroom, 2019</cite>
+          </blockquote>
+
+          <blockquote>
+            <p>
+              "Chop Shop Dance Festival has been a strong contemporary dance
+              presence on the Eastside for 11 years. The festival focuses on
+              audience engagement... Curator Eva Stone strives to present dance
+              that all can relate to, even if audience members are new to the
+              genre."
+            </p>
+            <cite>— Sumaya Mulla-Carrillo, SeattleDances, 2018</cite>
+          </blockquote>
+
+          <blockquote>
+            <p>
+              "This year's Chop Shop featured high quality dancing across the
+              board and a surprising proportion of well-plotted endings. It's a
+              well-curated, well-produced festival whose good reputation will
+              undoubtedly only continue to increase."
+            </p>
+            <cite>— Anna Waller, SeattleDances, 2014</cite>
+          </blockquote>
+
+          <blockquote>
+            <p>
+              "Stone provides a forum for regional, national, and sometimes
+              international dance artists to share their work in a friendly
+              atmosphere, with production values that are sometimes hard to get
+              on one's own — a theatre, publicity, lighting, and indeed, an
+              audience. It's a collegial experience and one of the region's most
+              important dance events."
+            </p>
+            <cite>— Dean Speer, Critical Dance, 2016</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <!--
+    <section id="contact">
+      <div class="section-wrap">
+        <div class="section-header">
+          <h2>Get in touch</h2>
+          <p>
+            We'd love to hear from you — whether you're an artist, a community
+            partner, a donor, or simply curious about what we're building on the
+            Eastside.
+          </p>
+        </div>
+        <form
+          class="contact-form"
+          action="mailto:hello@inlet-arts.org"
+          method="GET"
+        >
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="your@email.com"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="body"
+              placeholder="Tell us what's on your mind..."
+              rows="5"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Send message</button>
+          <p class="form-note">
+            Or email us directly at
+            <a href="mailto:hello@inlet-arts.org">hello@inlet-arts.org</a>
+          </p>
+        </form>
+      </div>
+    </section>
+    -->
+
+    <footer>
+      <p>
+        © 2026 Inlet Arts ·
+        <a href="https://inlet-arts.org">inlet-arts.org</a> · A fiscally
+        sponsored project of Fractured Atlas
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
