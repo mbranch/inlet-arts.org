@@ -12,9 +12,9 @@
   --mist: #f4f2ee;
   --sand: #e8e4dc;
   --white: #ffffff;
-  --text: #004259;
-  --text-muted: #017C89;
-  --text-light: #5EB19B;
+  --text: #111111;
+  --text-muted: #004259;
+  --text-light: #017C89;
   --border: rgba(0, 66, 89, 0.12);
   --border-mid: rgba(0, 66, 89, 0.2);
   --font-display: "Cormorant Garamond", Georgia, serif;
@@ -64,7 +64,7 @@ body {
   text-decoration: none;
 }
 .nav-logo-img {
-  height: 48px;
+  height: 72px;
   width: auto;
   display: block;
 }
