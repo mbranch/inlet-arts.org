@@ -432,6 +432,21 @@ section {
 .program-block.reverse > * {
   direction: ltr;
 }
+.program-block.program-block-stacked {
+  grid-template-columns: 1fr;
+}
+.program-block.program-block-stacked .program-img-wrap {
+  aspect-ratio: 16 / 7;
+}
+.program-block.program-block-stacked .program-img-wrap img {
+  object-position: center 75%;
+}
+.program-block.program-block-stacked .teachers-grid {
+  grid-template-columns: repeat(3, 200px);
+}
+.program-block.program-block-stacked .teacher-img-wrap {
+  aspect-ratio: 1 / 1;
+}
 
 .program-img-col {
   direction: ltr;
@@ -656,6 +671,70 @@ blockquote cite {
   line-height: 1.6;
 }
 
+.teachers-section {
+  margin-top: 3rem;
+  padding-top: 2.5rem;
+  border-top: 0.5px solid var(--border);
+}
+
+.teachers-section h4 {
+  margin-bottom: 1.5rem;
+}
+
+.dance-blast-label {
+  margin: 1.5rem 0;
+}
+
+.dance-blast-title {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--navy);
+  margin: 0.25rem 0 0.75rem;
+}
+
+.teachers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 1rem 0 2rem;
+}
+
+.teacher-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.teacher-img-wrap {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: var(--radius);
+  background: var(--sand);
+  margin-bottom: 0.75rem;
+}
+
+.teacher-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+
+.teacher-card h5 {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--navy);
+  margin-bottom: 0.4rem;
+}
+
+.teacher-card p {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
 .sessions-list {
   list-style: none;
   padding: 0;
@@ -811,6 +890,9 @@ footer a:hover {
   }
 
   .board-grid {
+    grid-template-columns: 1fr;
+  }
+  .teachers-grid {
     grid-template-columns: 1fr;
   }
   .quotes-grid {
