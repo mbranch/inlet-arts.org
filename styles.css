@@ -419,7 +419,7 @@ section {
   align-items: start;
   margin-bottom: 4rem;
   padding-bottom: 4rem;
-  border-bottom: 0.5px solid var(--border);
+  border-bottom: 1.5px solid var(--border-mid);
 }
 .program-block:last-child {
   margin-bottom: 0;
