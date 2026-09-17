@@ -13,8 +13,8 @@
   --sand: #e8e4dc;
   --white: #ffffff;
   --text: #111111;
-  --text-muted: #004259;
-  --text-light: #017C89;
+  --text-muted: #444444;
+  --text-light: #666666;
   --border: rgba(0, 66, 89, 0.12);
   --border-mid: rgba(0, 66, 89, 0.2);
   --font-display: "Cormorant Garamond", Georgia, serif;
@@ -502,10 +502,10 @@ section {
   text-decoration: underline;
 }
 .program-text p {
-  font-size: 14px;
-  color: var(--text-muted);
-  line-height: 1.75;
-  margin-bottom: 1rem;
+  font-size: 15px;
+  color: var(--text);
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
 }
 .program-text p:last-child {
   margin-bottom: 0;
@@ -514,10 +514,10 @@ section {
   margin: 0.5rem 0 1rem 1.25rem;
 }
 .program-text ul li {
-  font-size: 14px;
-  color: var(--text-muted);
-  line-height: 1.7;
-  margin-bottom: 6px;
+  font-size: 15px;
+  color: var(--text);
+  line-height: 1.8;
+  margin-bottom: 8px;
 }
 .program-text strong {
   color: var(--text);
