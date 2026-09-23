@@ -442,7 +442,7 @@ section {
   object-position: center 75%;
 }
 .program-block.reverse .teachers-grid {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
 
