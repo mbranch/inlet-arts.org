@@ -441,11 +441,9 @@ section {
 .program-block.program-block-stacked .program-img-wrap img {
   object-position: center 75%;
 }
-.program-block.program-block-stacked .teachers-grid {
-  grid-template-columns: repeat(3, 200px);
-}
-.program-block.program-block-stacked .teacher-img-wrap {
-  aspect-ratio: 1 / 1;
+.program-block.reverse .teachers-grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
 }
 
 .program-img-col {
