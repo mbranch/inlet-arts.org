@@ -604,8 +604,16 @@ section {
 /* ---- PRESS ---- */
 .quotes-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
+}
+.quote-short p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+.quote-short cite {
+  margin-top: 0.5rem;
+  display: block;
 }
 
 blockquote {
