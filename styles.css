@@ -547,6 +547,7 @@ section {
 }
 
 .team-img-wrap {
+  padding: 1rem;
   width: 250px;
   overflow: hidden;
   border-radius: var(--radius);
@@ -554,14 +555,13 @@ section {
   flex-shrink: 0;
 }
 .team-img-wrap img {
-  width: 100%;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
   object-position: center top;
   display: block;
-}
-.team-img-wrap .team-text {
-  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 0.75rem;
 }
 
 .team-text h4 {
