@@ -587,6 +587,7 @@ section {
 #photo-emily img { object-position: 50% 4%; }
 #photo-eva img   { object-position: 54% 27%; transform: scale(1.09); transform-origin: 54% 27%; }
 #photo-marco img { object-position: 50% 17%; transform: scale(1.15); transform-origin: 50% 17%; }
+#photo-cameo img { object-position: 65% 56%; }
 
 .team-img-wrap {
   padding: 1rem;
