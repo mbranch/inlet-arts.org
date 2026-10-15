@@ -811,6 +811,36 @@ blockquote cite {
   border-bottom: 0.5px solid var(--border);
 }
 
+.sessions-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.school-img-wrap {
+  width: 160px;
+  height: 105px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+
+.school-text {
+  flex: 1;
+}
+
+.school-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  display: block;
+}
+
+#school-blackwell img { object-position: 73% 64%; transform: scale(1.38); transform-origin: 73% 64%; }
+#school-eastridge img { object-position: 55% 100%; transform: scale(1.60); transform-origin: 55% 100%; }
+#school-giddens img   { object-position: 50% 50%; }
+
 .text-muted {
   color: var(--text-muted);
   font-size: 0.85rem;
