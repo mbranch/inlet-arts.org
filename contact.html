@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Press & Contact | Inlet Arts</title>
+    <meta name="description" content="Press coverage and testimonials for Inlet Arts and CHOP SHOP, plus a contact form for artists, schools, and community partners on Seattle's Eastside." />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="nav-brand">
+        <a href="index.html">
+          <img src="images/Inlet_Arts_logo-horizontal-Transparent.png" alt="Inlet Arts — Dance · Access · Education" class="nav-logo-img" />
+        </a>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="programs.html">Programs</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Press & Contact</a>
+      </div>
+      <button class="nav-toggle" id="navToggle">&#9776;</button>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" onclick="closeMobile()">Home</a>
+      <a href="programs.html" onclick="closeMobile()">Programs</a>
+      <a href="about.html" onclick="closeMobile()">About</a>
+      <a href="contact.html" onclick="closeMobile()">Press & Contact</a>
+    </div>
+
+    <section id="press">
+      <div class="section-wrap">
+        <div class="section-header">
+          <h2>Press &amp; Testimonials</h2>
+          <p>What artists, audiences, and critics have said about CHOP SHOP and Inlet Arts.</p>
+        </div>
+
+        <div class="quotes-grid">
+          <blockquote>
+            <p>
+              "My Chop Shop experience is one of such admiration, appreciation,
+              and joy... Chop Shop feels like a dance home for me — somewhere
+              with people I will always want to return to, and a supportive
+              catalyst for new ideas and opportunities. The work that Eva and
+              her team are doing is crucial and wonderful and necessary to the
+              contemporary dance community."
+            </p>
+            <cite>— Courtney Mazeika, dance artist</cite>
+          </blockquote>
+
+          <blockquote>
+            <p>
+              "Working with Emily Schoen Branch over the course of several years
+              has been integral to my growth as an artist in and out of the
+              studio... what I've always admired most about Emily is her
+              dedication to exercising fair, organized, and sustainable working
+              conditions for dancers in an industry where it is largely
+              lacking."
+            </p>
+            <cite>— Kacie Boblitt, dance artist</cite>
+          </blockquote>
+
+          <blockquote>
+            <p>
+              "Going into CHOP SHOP: Bodies of Work, I wasn't sure what to
+              expect... I was pleasantly surprised to witness an event curated
+              for people like me, with the purpose of presenting accessible,
+              creative work from artists that want to share their stories."
+            </p>
+            <cite>— Huma Ali, Teen Editor, TeenTix Newsroom, 2019</cite>
+          </blockquote>
+
+          <blockquote>
+            <p>
+              "Chop Shop Dance Festival has been a strong contemporary dance
+              presence on the Eastside for 11 years. The festival focuses on
+              audience engagement... Curator Eva Stone strives to present dance
+              that all can relate to, even if audience members are new to the
+              genre."
+            </p>
+            <cite>— Sumaya Mulla-Carrillo, SeattleDances, 2018</cite>
+          </blockquote>
+
+          <blockquote>
+            <p>
+              "This year's Chop Shop featured high quality dancing across the
+              board and a surprising proportion of well-plotted endings. It's a
+              well-curated, well-produced festival whose good reputation will
+              undoubtedly only continue to increase."
+            </p>
+            <cite>— Anna Waller, SeattleDances, 2014</cite>
+          </blockquote>
+
+          <blockquote>
+            <p>
+              "Stone provides a forum for regional, national, and sometimes
+              international dance artists to share their work in a friendly
+              atmosphere, with production values that are sometimes hard to get
+              on one's own — a theatre, publicity, lighting, and indeed, an
+              audience. It's a collegial experience and one of the region's most
+              important dance events."
+            </p>
+            <cite>— Dean Speer, Critical Dance, 2016</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-wrap">
+        <div class="section-header">
+          <h2>Get in touch</h2>
+          <p>
+            Whether you're an artist, a school, a community partner, or someone
+            who wants to know more about what we're building, we'd love to hear
+            from you.
+          </p>
+        </div>
+        <!-- Replace YOUR_FORM_ID below with your Formspree form ID after signing up at formspree.io -->
+        <form
+          class="contact-form"
+          action="https://formspree.io/f/YOUR_FORM_ID"
+          method="POST"
+        >
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="your@email.com"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Tell us what's on your mind..."
+              rows="5"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Send message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        © 2026 Inlet Arts ·
+        <a href="https://inlet-arts.org">inlet-arts.org</a> ·
+        18408 189th Ave NE, Woodinville, WA 98077 ·
+        EIN: 42-3301453 ·
+        Inlet Arts is a registered 501(c)(3) nonprofit corporation.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

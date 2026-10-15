@@ -19,39 +19,11 @@ document.addEventListener('click', (e) => {
   }
 });
 
-// Smooth scroll for all anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    if (target) {
-      const navHeight = document.getElementById('navbar').offsetHeight;
-      const targetTop = target.getBoundingClientRect().top + window.scrollY - navHeight;
-      window.scrollTo({ top: targetTop, behavior: 'smooth' });
-    }
-  });
+// Highlight active nav link based on current page
+const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+document.querySelectorAll('.nav-links a').forEach(link => {
+  const href = link.getAttribute('href');
+  if (href === currentPage || (currentPage === '' && href === 'index.html')) {
+    link.classList.add('active');
+  }
 });
-
-// Highlight active nav link on scroll
-const sections = document.querySelectorAll('section[id]');
-const navLinks = document.querySelectorAll('.nav-links a');
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href') === '#' + entry.target.id) {
-          link.classList.add('active');
-        }
-      });
-    }
-  });
-}, { rootMargin: '-40% 0px -55% 0px' });
-
-sections.forEach(section => observer.observe(section));
-
-// Add active nav link style dynamically
-const style = document.createElement('style');
-style.textContent = '.nav-links a.active { color: var(--navy); font-weight: 500; }';
-document.head.appendChild(style);

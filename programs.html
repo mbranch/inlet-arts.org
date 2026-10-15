@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programs | Inlet Arts</title>
+    <meta name="description" content="Inlet Arts programs: CHOP SHOP dance festival, RISE intensive, Experience Dance Program, and Dance Blast! after-school program on Seattle's Eastside." />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="nav-brand">
+        <a href="index.html">
+          <img src="images/Inlet_Arts_logo-horizontal-Transparent.png" alt="Inlet Arts — Dance · Access · Education" class="nav-logo-img" />
+        </a>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="programs.html">Programs</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Press & Contact</a>
+      </div>
+      <button class="nav-toggle" id="navToggle">&#9776;</button>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" onclick="closeMobile()">Home</a>
+      <a href="programs.html" onclick="closeMobile()">Programs</a>
+      <a href="about.html" onclick="closeMobile()">About</a>
+      <a href="contact.html" onclick="closeMobile()">Press & Contact</a>
+    </div>
+
+    <section id="programs">
+      <div class="section-wrap">
+        <div class="section-header">
+          <h2>Programs</h2>
+          <p>
+            Four interconnected initiatives, one mission: making contemporary dance accessible to youth, professionals, and community members outside of Seattle.
+          </p>
+        </div>
+
+        <div class="program-block">
+          <div class="program-img-col">
+            <div class="program-img-wrap">
+              <img
+                src="images/chopshop.jpg"
+                alt="CHOP SHOP performance"
+                onerror="this.parentElement.classList.add('img-fallback')"
+              />
+            </div>
+            <p class="photo-caption"><em>Bryn Cohn dancers performing in CHOP SHOP, February 2016.</em></p>
+          </div>
+          <div class="program-text">
+            <span class="tag">Festival · April 23–25, 2027 · Bellevue, WA</span>
+            <h3>
+              <a
+                href="https://www.chopshopdance.org"
+                target="_blank"
+                rel="noopener"
+                >CHOP SHOP: Bodies of Work ↗</a
+              >
+            </h3>
+            <p>
+              A weekend-long contemporary dance festival returning to Seattle's Eastside after a six-year hiatus. April 23–25, 2027 at Meydenbauer Theater in Bellevue.
+            </p>
+            <p>
+              Since 2008: 410+ artists, 76 companies, 70+ master classes. Visit <a href="https://www.chopshopdance.org" target="_blank" rel="noopener">chopshopdance.org ↗</a> for tickets and details.
+            </p>
+          </div>
+        </div>
+
+        <div class="program-block reverse">
+          <div class="program-img-col">
+            <div class="program-img-wrap">
+              <img
+                src="images/rise.jpg"
+                alt="RISE dance intensive"
+                onerror="this.parentElement.classList.add('img-fallback')"
+              />
+            </div>
+            <p class="photo-caption"><em>Brandon Cournay and Allison Schuster performing in Emily Schoen Branch's work at Jacob's Pillow.</em></p>
+          </div>
+          <div class="program-text">
+            <span class="tag">Intensive · Summer 2027</span>
+            <h3>RISE</h3>
+            <p>
+              An intimate two-week intensive pairing emerging dancers with choreographers and educators from Seattle and the national field. Set in the beauty of the Pacific Northwest, with a public culminating performance.
+            </p>
+          </div>
+        </div>
+
+        <div class="program-block">
+          <div class="program-img-col">
+            <div class="program-img-wrap">
+              <img
+                src="images/edp.jpg"
+                alt="Experience Dance Program"
+                onerror="this.parentElement.classList.add('img-fallback')"
+              />
+            </div>
+            <p class="photo-caption"><em>Dancers in a master class offered by CHOP SHOP, February 2018.</em></p>
+          </div>
+          <div class="program-text">
+            <span class="tag">Community · Year-round</span>
+            <h3>Experience Dance Program</h3>
+            <p>
+              Free lecture-demonstrations, movement classes, and open studio sessions woven through all Inlet Arts programming — in partnership with community groups across the Eastside.
+            </p>
+            <p>Past venues include South Bellevue Community Center, Bellevue Art Museum, Crossroads Community Center, and Eastside libraries. 1,000+ participants served.</p>
+          </div>
+        </div>
+
+        <div class="program-block reverse">
+          <div class="program-img-col">
+            <div class="program-img-wrap">
+              <img
+                src="images/schools.jpg"
+                alt="Public school programming"
+                onerror="this.parentElement.classList.add('img-fallback')"
+              />
+            </div>
+            <p class="photo-caption"><em>Youth participating in a master class by Eva Stone, February 2017.</em></p>
+          </div>
+          <div class="program-text">
+            <span class="tag">Youth · After-School Programming</span>
+            <h3>Dance Blast!</h3>
+            <p>
+              Inlet Arts' after-school dance program for grades K–5. Learn moves from pop culture, build your own choreography, and close every class with a dance jam: music, lights, full energy.
+            </p>
+            <p>
+              Sessions run seven to ten weeks and culminate in an open showing for families. Our approach centers exploration, physicality, and joy — giving kids the chance to move, invent, and make dance their own. Scholarships are available.
+            </p>
+
+            <h4>Fall 2026 Sessions</h4>
+            <ul class="sessions-list">
+              <li>
+                <strong><a href="https://maps.app.goo.gl/pmyRmsqKXuKnjMiP7" target="_blank" rel="noopener">Elizabeth Blackwell Elementary</a> — Sammamish</strong><br />
+                Mondays, 4:00–5:00pm · September 14 – November 16<br />
+                <a href="contact.html" class="text-link">Register &rarr;</a>
+              </li>
+              <li>
+                <strong><a href="https://eastridge.nsd.org/" target="_blank" rel="noopener">East Ridge Elementary</a> — Woodinville</strong><br />
+                Wednesdays, 2:15–3:15pm · September 30 – November 18<br />
+                <a href="contact.html" class="text-link">Register &rarr;</a>
+              </li>
+              <li>
+                <strong><a href="https://maps.app.goo.gl/JHLeP5PmfWrcGXcY7" target="_blank" rel="noopener">The Giddens School</a> — Seattle</strong><br />
+                Fridays, 3:45–4:45pm · September 25 – December 4<br />
+                <span class="text-muted">Contact the Giddens School for registration information.</span>
+              </li>
+            </ul>
+            <div class="callout-box">
+              <h4>Bring Inlet Arts to your school</h4>
+              <p>
+                We're looking for additional schools for 2027 and beyond. If you're
+                a principal, PTA leader, or parent who'd like to bring creative
+                movement to your school, we'd love to talk. We handle instructor
+                hiring, curriculum, and program logistics, and ask schools for space
+                and partnership on registration.
+              </p>
+              <a href="contact.html" class="text-link">Get in touch &rarr;</a>
+            </div>
+            <h4>Meet the Teachers</h4>
+            <div class="teachers-grid">
+              <div class="teacher-card">
+                <div class="teacher-img-wrap">
+                  <img src="images/Kendall headshot.jpeg" alt="Kendall Imus" onerror="this.parentElement.classList.add('img-fallback')" />
+                </div>
+                <h5>Kendall Imus</h5>
+                <p>Kendall holds a BA in Dance from the University of Washington. She has been dancing since age 7 and enjoys a wide range of styles. She is co-director of Orange County Peace Camp, an annual summer program for children ages 3–18 in California, and works on Seattle film sets in the camera and lighting departments.</p>
+              </div>
+              <div class="teacher-card">
+                <div class="teacher-img-wrap">
+                  <img src="images/Arianna T headshot.jpeg" alt="Arianna Texeira" onerror="this.parentElement.classList.add('img-fallback')" />
+                </div>
+                <h5>Arianna Texeira</h5>
+                <p>Arianna holds a BA in Dance and Education from the University of Washington. With years of experience teaching dance, preschool, and elementary school, she is passionate about bringing dance and education together and continues her work as a dance artist and educator in the Seattle area.</p>
+              </div>
+              <div class="teacher-card">
+                <div class="teacher-img-wrap">
+                  <img src="images/Chloe headshot.jpeg" alt="Chloe Dylla" onerror="this.parentElement.classList.add('img-fallback')" />
+                </div>
+                <h5>Chloe Dylla</h5>
+                <p>Chloe is a dancer and educator trained in ballet, jazz, and contemporary dance. She holds a BA in Dance and Political Science from the University of Washington and brings a commitment to inclusive, inspired learning to every class she teaches.</p>
+              </div>
+            </div>
+            <a href="contact.html" class="text-link">Get in touch &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        © 2026 Inlet Arts ·
+        <a href="https://inlet-arts.org">inlet-arts.org</a> ·
+        18408 189th Ave NE, Woodinville, WA 98077 ·
+        EIN: 42-3301453 ·
+        Inlet Arts is a registered 501(c)(3) nonprofit corporation.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
