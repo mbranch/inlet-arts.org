@@ -923,6 +923,18 @@ blockquote cite {
 .gallery-cell {
   overflow: hidden;
   background: #111;
+  position: relative;
+}
+
+.gallery-credit {
+  position: absolute;
+  bottom: 6px;
+  right: 8px;
+  font-size: 10px;
+  color: rgba(255,255,255,0.65);
+  font-family: var(--font-body);
+  letter-spacing: 0.03em;
+  pointer-events: none;
 }
 
 .gallery-cell img {
