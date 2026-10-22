@@ -491,6 +491,26 @@ section {
   color: var(--text-light);
 }
 
+.danceblast-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.danceblast-img-wrap {
+  overflow: hidden;
+  border-radius: var(--radius);
+  aspect-ratio: 3 / 2;
+}
+
+.danceblast-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  display: block;
+}
+
 .tag {
   display: inline-block;
   font-size: 13px;
